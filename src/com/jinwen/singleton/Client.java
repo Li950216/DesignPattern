@@ -4,11 +4,12 @@ import java.util.concurrent.CountDownLatch;
 
 public class Client {
 	
-	private static int count = 10;       //规定的线程数
-	private static long jobCountPerThread = 10000000000L;      //每个线程作业数
+	private static int count = 100;       //规定的线程数
+	private static long jobCountPerThread = 1000L;      //每个线程作业数
 
 	public static void main(String[] args) throws InterruptedException{
 		// TODO Auto-generated method stub
+		
 		test1();   // 饿汉式测试
 		test2();   //懒汉式
 		test3();   //静态内部类
